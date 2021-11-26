@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="GXX-Lr-lGN" id="u1p-OY-V0k"/>
+                <outlet property="tableView" destination="1Fl-cZ-Tsl" id="vT5-Nv-gJS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="p8Y-Tl-Ezr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Fl-cZ-Tsl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GXX-Lr-lGN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Gdn-a3-gNv"/>
+                        <outlet property="delegate" destination="-1" id="uf2-st-gih"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1Fl-cZ-Tsl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3mI-ub-xvc"/>
+                <constraint firstItem="1Fl-cZ-Tsl" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9yC-ME-aeV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Fl-cZ-Tsl" secondAttribute="trailing" id="TvN-rS-8fl"/>
+                <constraint firstItem="1Fl-cZ-Tsl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vcb-Jb-wWB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Fl-cZ-Tsl" secondAttribute="bottom" id="kXG-TE-Qpi"/>
+                <constraint firstAttribute="bottom" secondItem="1Fl-cZ-Tsl" secondAttribute="bottom" id="mxN-AF-dLo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
